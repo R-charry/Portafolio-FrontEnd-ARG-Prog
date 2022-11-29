@@ -49,7 +49,9 @@ header .container-fluid .container-logo{
 }
 
 header .container-fluid .container-logo .logo{
-    height: 40px;
+    height: 30px;
+    
+
 }
 
 header .container-fluid .container-links{
@@ -60,7 +62,7 @@ header .container-fluid .container-links{
 
 header .container-fluid .container-links .img-fluid{
     padding: 5px;
-
+    height: 35px;
 
 }
 
@@ -73,6 +75,9 @@ header .container-fluid .container-login{
 header .container-fluid .container-login button{
 color: #00c3de;
 border-color: #00c3de;
+padding:0;
+            height: 25px;
+            font-size: 15px;
 }
 header .container-fluid .container-login button:hover{
     color: white;
@@ -126,7 +131,36 @@ header .container-fluid .container-login button:hover{
     }
 
     
-
+    @media(max-width:578px) {
+        header .container-fluid .container-logo .logo{
+            height: 25px;
+        }
+        header .container-fluid .container-links .img-fluid{
+            height: 30px;
+        }
+        header .container-fluid .container-login button{
+            padding:0;
+            height: 20px;
+            font-size: 10px;
+        }
+        .img-perfil{
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top:260px;
+            left: 10px;
+            border-radius: 50%;
+        }
+        header .container-fluid .container-logo{
+            width: 33%;
+        }
+        header .container-fluid .container-links{
+            width: 33%;
+        }
+        header .container-fluid .container-login{
+            width: 33%;
+        }
+    }
 
     
 /*
