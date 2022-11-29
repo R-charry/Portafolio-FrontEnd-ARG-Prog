@@ -78,6 +78,7 @@ border-color: #00c3de;
 padding:0;
             height: 25px;
             font-size: 15px;
+            margin-right: 2px;
 }
 header .container-fluid .container-login button:hover{
     color: white;
@@ -132,17 +133,7 @@ header .container-fluid .container-login button:hover{
 
     
     @media(max-width:578px) {
-        header .container-fluid .container-logo .logo{
-            height: 25px;
-        }
-        header .container-fluid .container-links .img-fluid{
-            height: 30px;
-        }
-        header .container-fluid .container-login button{
-            padding:0;
-            height: 20px;
-            font-size: 10px;
-        }
+       
         .img-perfil{
             width: 80px;
             height: 80px;
@@ -151,16 +142,9 @@ header .container-fluid .container-login button:hover{
             left: 10px;
             border-radius: 50%;
         }
-        header .container-fluid .container-logo{
-            width: 33%;
+        
         }
-        header .container-fluid .container-links{
-            width: 33%;
-        }
-        header .container-fluid .container-login{
-            width: 33%;
-        }
-    }
+    
 
     
 /*
