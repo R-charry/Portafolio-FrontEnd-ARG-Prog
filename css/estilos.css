@@ -1,34 +1,140 @@
-    * {
+ * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
+.color1 {color: #001a25;}
+.color2 {color: #003646;}
+.color3 {color: #005b71;}
+.color4 {color: #008aa3;}
+.color5 {color: #00c3de;}
 
 body {
-    background-color: #1b2046;
+    background-color: #001a25;
     font-family: 'Roboto', sans-serif;
-    width: 100vw;
-    max-width: 100%;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 1.4;
-    color: var(--main-white);
     overflow-x: hidden;
 }
-
+section{
+    background-color: #001a25;
+}
 p {
     color: black;
+}
+h1{
+    color:#00c3de ;
 }
 
 a {
     display: inline-block;
 }
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+}
+header .container-fluid{
+   
+}
+header .container-fluid .container-logo{
+    display: flex;
+   align-items: center;
+   justify-content:flex-start ;
+    height: 60px;
+}
 
+header .container-fluid .container-logo .logo{
+    height: 40px;
+}
+
+header .container-fluid .container-links{
+    display: flex;
+    align-items: center;
+    justify-content:flex-end ;
+}
+
+header .container-fluid .container-links .img-fluid{
+    padding: 5px;
+
+
+}
+.img-github{
+    color: white;
+
+
+}
+
+header .container-fluid .container-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-fluid .container-login button{
+color: #00c3de;
+border-color: #00c3de;
+}
+header .container-fluid .container-login button:hover{
+    color: white;
+    border-color: #0055de;
+    background-color:#008aa3 ;
+    }
+    .container-fluid{
+    background-color: #001a25;
+    }
+    main{
+        background-color:white;
+        width: 100%;
+    }
+    .banner-container{
+        width: 100%;
+        background-color: #001a25;
+        height: auto;
+        position: relative;
+        
+    }
+    .banner{
+        width: 100%;
+        height: 300px;
+    }
+    .img-perfil{
+        width: 130px;
+        height: 130px;
+        position: absolute;
+        top:228px;
+        left: 20px;
+        border-radius: 50%;
+    }
+    .a-cerca-de{
+
+    }
+    .a-cerca-de .container-info{
+        padding-top:15px ;
+        padding-bottom: 15px;
+        width: 100%;
+        text-align: center;
+        
+    }
+      
+    
+    .a-cerca-de h1{
+        color: #008aa3;
+        
+    }
+    .a-cerca-de p{
+        color: #008aa3;       
+    }
+
+    
+
+
+    
+/*
 header {
     display: flex;
     border-bottom: solid 1px rgba(red, green, blue, alpha);
-    width: 100vw;
-    height: 100px;
+    width: 100%;
+    height: 70px;
     background-color: #191c32;
     color: #fff;
     margin-top: 0;
@@ -36,32 +142,62 @@ header {
     align-items: center;
     background-image: linear-gradient(180deg, #0a92a2 0, #0d6074 50%, #0ffff7 100%);
 }
+header .row{
+    --bs-gutter-x:0px;
+}
 
 
-/* .color1 {color: #103e52;}
-.color2     {color: #0d6074;}
-.color3 {color: #0a92a2;}
-.color4 {color: #06d6d6;}
-.color5 {color: #0ffff7;} */
+header .container-fluid{
 
-header nav {
+}
+header .container-fluid .container-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-fluid .container-h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top:5px;
+
+}
+
+header .container-fluid .container-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .container-fluid nav {
     display: flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0 10px;
     align-items: center;
 }
 
 header h2 {
     font-size: 25px;
 }
-
-header nav ul {
+header .navbar{
+    width: 100%;
+}
+header .container-nav .navbar ul {
     display: flex;
     justify-content: space-evenly;
-    font-size: 1.5rem;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    
+}
+header .navbar ul li a {
+   
 }
 
-header nav ul a:hover {
+header .navbar ul li a:hover {
     background-color: aqua;
     transition: ease-in .4s;
     color: #191c32;
@@ -82,7 +218,9 @@ header .container .hamb {
     display: none;
     position: relative;
 }
-
+header .container-hamb{
+    display: none;
+}
 header img {
     height: 50px;
     border-radius: 50%;
@@ -100,7 +238,7 @@ header input {
     padding-right: 0px;
     padding-left: 0px;
     height: 100%;
-    width: 50%;
+    width: 100%;
     font-size: 1.5rem;
     cursor: pointer;
     text-align: center;
@@ -169,3 +307,4 @@ header input {
             width: 100%;
         }
     }
+     */
