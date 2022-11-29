@@ -33,14 +33,19 @@ header {
     justify-content: center;
     height: 60px;
 }
+header .row{
+   padding-left:0px;
+   padding-right: 0px;
+   height: 60px;
+}
 header .container-fluid{
-   
+   height: 60px;
 }
 header .container-fluid .container-logo{
     display: flex;
    align-items: center;
    justify-content:flex-start ;
-    height: 60px;
+    
 }
 
 header .container-fluid .container-logo .logo{
@@ -58,16 +63,11 @@ header .container-fluid .container-links .img-fluid{
 
 
 }
-.img-github{
-    color: white;
-
-
-}
 
 header .container-fluid .container-login{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 header .container-fluid .container-login button{
