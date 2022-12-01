@@ -1,107 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portafolio</title>
+    <title>boostrap</title>
+    <script src="https://kit.fontawesome.com/26a61b9f72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    
-    <script src="https://kit.fontawesome.com/37ef4fca07.js" crossorigin="anonymous"></script>
-
+   
 </head>
-
 <body>
-    <!-- <header>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-1 container-img">
-                    <img src="img/perfil.png" alt="">
-                </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="Logo Argentina Programa" class="img-fluid w-100 logo ">
+      </a>
 
-                <div class="col-sm-2 container-h2">
-                    <h2>Ramiro Charry</h2>
-                </div>
+         <ul class="list-group list-group-horizontal ">         
+            <li class="list-group-item">
+              <a href="https://github.com/R-charry"  target="_blank">
+               <i class="fa-brands fa-github fa-lg text-white"></i>
+              </a>
+            </li>              
+            <li class="list-group-item">
+              <a href="https://www.linkedin.com/in/ramiro-charry-b1b209221/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-lg text-white"></i>
+              </a>
+            </li>               
+            <li class="list-group-item">
+              <a href="https://instagram.com/ramiro.charry" target="_blank">
+                <i class="fa-brands fa-instagram fa-lg text-white"></i>
+              </a>
+            </li>                   
+            <li class="list-group-item">
+              <a href="https://wa.me/+5493512464629" target="_blank">
+              <i class="fa-brands fa-whatsapp fa-lg text-white"></i>
+              </a>
+            </li>
+              <!-- Button trigger modal -->
+              <!-- Boton que abre el login -->
+            <li class="list-group-item">
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#loginModal">
+                <i class="fa-solid fa-user-lock fa-1x text-white"></i>
+              </button>
+            </li>
+          </ul>
 
-                <div class="col-sm-7 container-nav">
-                    <nav class="navbar">
-                    <ul>
-                        <li><a class=" " href="#welcome-section">Sobre mi</a></li>
-                        <li><a class=" " href="#projects ">Trabajos</a></li>
-                        <li><a class=" " href="#profile-link ">Contacto</a></li>
-                    </ul>
-                    </nav>
-                </div>
-
-                <div class="col-sm-2 ">
-                    <input type="button" value="Login">
-                    ->
-                </div>
-
-                <div class="container-hamb">
-                 <a href="# " class="hamb "><i class="fas fa-bars "></i></a>
-                </div>
-            </div>
-        </div>
-    </header> -->
-    <header>
-        <div class="container-fluid">
-            <div class="row">
-                
-                <div class="col-4 col-md-5 container-logo">
-                    <img src="img/ap-logo.png" class="img-fluid logo" alt="">
-                </div>
-                
-                <div class="col-6 col-md-6 container-links">
-                    <a href="https://instagram.com/ramiro.charry" target="_blank">
-                    <img src="img/instagram.png" class="img-fluid" alt=""></a>
-               
-                    <a href="https://wa.me/+5493512464629" target="_blank">
-                    <img src="img/whatsapp.png" class="img-fluid" alt=""></a>
-                    
-                    <a href="https://www.linkedin.com/in/ramiro-charry-b1b209221/" target="_blank">
-                    <img src="img/linkedin.png" class="img-fluid" alt=""></a>
-                    
-                    <a href="https://github.com/R-charry"  target="_blank">
-                    <img src="img/github1.png" class="img-fluid" alt=""></a>
-                    
-                </div>
-                <div class="col-2 col-md-1 container-login">
-                    <button class="btn" type="submit">Login</button>
-                </div>
-                
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="container-fluid">
-            <div class="banner-container">
-                <img src="img/banner.jpg" class="banner" alt="">
-                <img src="img/perfil.png" class="img-perfil" alt="">  
-            </div>
-          
-        </section>
-        
+    </div>
+  </nav>
+<!-- Seccion banner -->
+<section class="banner">
+  <div class="container-texto-banner">
+  <h1 class="">Ramiro Charry <br> <span>Desarrollador Web Full Stack</span></h1>
+  </div>
+  <img src="img/perfil.png" class="img-perfil img-fluid" alt=""> 
+</section>
+<!-- El Login -->
+<!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesión</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1">
             
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          
+          
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
         
-        <section class="a-cerca-de">
-            <div class="container-info">
-            <h1>Ramiro Charry</h1>
-            <p>Full Stack Developer</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim accusantium iste officia quas ex corporis odit, tempore ut corrupti fugit. Aliquid eveniet libero, quia omnis nisi nam quibusdam totam earum!</p>
-            </div>
-        </section>
-         
-    </main>
+      </div>
+    </div>
+  </div>
+</div>
 
-    <script src="js/bootstrap.min.js "></script>
-    <script src="js/jquery-3.6.0.min.js "></script>
-    <script src="js/funciones.js "></script>
+
+  
+  
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/funciones.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
 </body>
-
-
 </html>
-
