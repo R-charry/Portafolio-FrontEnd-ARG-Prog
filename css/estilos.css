@@ -4,25 +4,36 @@
 .bg-color-4 {background-color: #008aa3;}
 .bg-color-5 {background-color: #00c3de;}
 
+/* bootstrap 
+order-md-first 
+order-1
+order-xl-3
+offset-2    */
+
+
 .color1 {color: #001a25;}
 .color2 {color: #003646;}
 .color3 {color: #005b71;}
 .color4 {color: #008aa3;}
 .color5 {color: #00c3de;}
-
+html{
+    font-size: 10px;
+}
 body{ 
     background-color: lightskyblue;
 }
 nav{
+    
     background-color: #001a25;
 }
 .logo{
    height: 2rem;
 }
-.list-group-item {
+/* .list-group-item {
     padding-right: 10px;
     padding-left: 10px;
-}
+    
+} */
 .invertir {
     filter:invert(1);
     -webkit-filter: invert(1);
@@ -36,6 +47,13 @@ nav .btn {
     --bs-btn-padding-x: 0;
     --bs-btn-padding-y:0;
     --bs-btn-border-width:0;
+    height: 21px;
+    width: 17.5px;
+    vertical-align:auto ;
+}
+.navbar-toggler-icon{
+    height: 21px;
+    width: 17.5px;
 }
 i.fa-brands.fa-lg.text-white:hover{
     --bs-text-opacity: 1;
@@ -65,7 +83,7 @@ section.banner.container-texto-banner{
     text-align: center;
     justify-content: center;
     position: absolute;
-    height: 100vh;
+    
 }
 section.banner h1{
     text-align: center;
@@ -75,7 +93,7 @@ section.banner h1{
     color: #001a25;
     font-size: 2.5rem;
     line-height: 0.8;
-    -webkit-text-fill-color: #003646;
+    -webkit-text-fill-color: white;
 -webkit-text-stroke: 0.8px #001a25;
 }
 section.banner span{
@@ -83,7 +101,7 @@ section.banner span{
     font-size: 1.5rem;
 }
 
-.img-perfil{
+/* .img-perfil{
     width: auto;
     height: 150px;
     position: absolute;
@@ -93,7 +111,8 @@ section.banner span{
     border-radius: 50%;
     border: solid 1px;
     border-color: #003646;
-}
+} */
+
 
 
     section.banner h2{
@@ -107,9 +126,57 @@ section.banner span{
         font-size: 0.9rem;
         line-height: 1.6;
         color: white;
+     }
+    /* .container-row{
+         height: 33.33vh; 
+        
+    } */
+    .img-perfil1{
+        width: 20rem;
+        height: auto;
+        /* border: solid 1px; */
+        border-color: #003646;
+        
+    }
+    section.presentacion{
+        
+      
+        background-color: white;
+      
+            
+    }
+    /* section .container-row{
+       
+    } */
+    section.presentacion img{
+        padding:2rem;
+    }
+    section.presentacion .container-img{
+        
+        /* border:1px solid #001a25;
+        background-image: url(../img/recortada.png);
+        background-size:100px;
+        background-repeat: repeat;
+        background-attachment: fixed; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    section.presentacion .container-text{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+       
+    }
+    
+    section.presentacion h4{
+    padding:2rem;
+    padding-top: 0rem;
+    color: black;
     }
 
-    @media (max-width: 569px) {
+    /* @media (max-width: 569px) {
         section.banner h2{
             margin-top: 10px;
             padding:10px;
@@ -118,18 +185,70 @@ section.banner span{
             top: 38%;
             font-size: 0.85rem;
             line-height: 1.2;
+        }
+        section.presentacion{
+            
+            height: 100vh;
+        }
+
+        .container-fluid .text-center .container-presentacion{
+            height: 100vh;
+        }
+        .container-presentacion{
+            height: 100vh;
+        }
+          .container-row{
+            height: 100vh;
+        }
+
+        section.presentacion .container-img{
+            padding: 0px 0px;
            
         }
-     }
+       
+       
+    }
+         
 
      @media (max-width: 445px) {
         img.logo{
             height: 2rem;
             width: 20%;
         }
-        .fa-brands{
-            height: ;
-        }       
+   
+        section.presentacion{
+            
+            height: 100vh;
+        }
+
+        .row .container-row{
+
+            height:100vh;
+               
+        }
+        
+        section.presentacion .container-text{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+           
+        }
+        .container-fluid .text-center .container-presentacion{
+            height: 100vh;
+        }
+        .container-presentacion{
+            height: 100vh;
+        }
+          .container-row{
+            height: 100vh;
+        }
+
+        section.presentacion .container-img{
+            padding: 0px 0px;
+           
+        }
+       
      }
     
-
+     */

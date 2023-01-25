@@ -6,22 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>boostrap</title>
     <script src="https://kit.fontawesome.com/26a61b9f72.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
+    
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/estilos.css">
    
 </head>
 <body>
+
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">
-        <img src="img/logo.png" alt="Logo Argentina Programa" class="img-fluid w-100 logo ">
-      </a>
+       
+          <a class="navbar-brand" href="#">
+            <img src="img/logo.png" alt="Logo Argentina Programa" class="img-fluid w-100 logo ">
+          </a>
 
-         <ul class="list-group list-group-horizontal ">         
+          <ul class="list-group list-group-horizontal ">         
             <li class="list-group-item">
               <a href="https://github.com/R-charry"  target="_blank">
-               <i class="fa-brands fa-github fa-lg text-white"></i>
+              <i class="fa-brands fa-github fa-lg text-white"></i>
               </a>
             </li>              
             <li class="list-group-item">
@@ -39,6 +43,7 @@
               <i class="fa-brands fa-whatsapp fa-lg text-white"></i>
               </a>
             </li>
+            
               <!-- Button trigger modal -->
               <!-- Boton que abre el login -->
             <li class="list-group-item">
@@ -46,70 +51,141 @@
                 <i class="fa-solid fa-user-lock fa-1x text-white"></i>
               </button>
             </li>
-          </ul>
+            <li class="list-group-item">
+            <button class="btn navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="navbar-toggler-icon"></i>
+            </button>
+          </li>
+           
+           
+    </div>
 
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+       
+      </ul>
+     
     </div>
   </nav>
-<!-- Seccion banner -->
-<section class="banner">
-  <div class="container-texto-banner">
-  <h1 class="">Ramiro Charry <br> <span>Desarrollador Web Full Stack</span></h1>
+
+ 
+  <!-- Seccion banner -->
+  <section class="banner">
+    <div class="container-texto-banner">
+      <h1 class="">Ramiro Charry <br> <span>Desarrollador Web Full Stack</span></h1>
 
 
+
+
+
+      
+    </div>
+   
+         
+  </section>
+
+  <!-- Seccion Presentacion -->
+  <section class="presentacion">
+    <div class="container-fluid text-center container-presentacion">
+      <div class="row container-row">
+        <div class="col-12 col-md-3 col-lg-3 container-img">
+          <img src="img/perfil.png" class="mx-auto img-perfil1 rounded-circle img-fluid" alt="foto de perfil">
+        </div>
+        <div class="col-12 col-md-9 col-lg-8 pt-3 pt-lg-0 my-2 container-text">
+          <h4 class="text-presentacion">
+            Mi nombre es Ramiro Charry, soy Desarrollador Web Full Stack. Nací y crecí en la Ciudad de Córdoba,
+            Argentina
+            Desde pequeño, mi hobbie siempre fueron las computadoras, me pasaba horas en la PC, allí nacio 
+            mi curiosidad,
+            siempre fue sencillo
+            para mi manejar agilmente el ordenador.
+            Tengo 27 años, llevo desde mayo del 2021 aprendiendo en 
+            el mundo de la programación y es algo que considero apasionante
+            y dinámico con un amplio mercado laboral.
+
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- El Login -->
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesión</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1">
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+        </div>
+      </div>
+    </div>
   </div>
-  <img src="img/perfil.png" class="img-perfil img-fluid" alt=""> 
-</section>
-<!-- El Login -->
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Inicio Sesión</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
       </div>
-      <div class="modal-body">
-        <form>
-          <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Email</label>
-            <input type="email" class="form-control" id="exampleInputEmail1">
-            
-          </div>
-          <div class="mb-3">
-            <label for="exampleInputPassword1" class="form-label">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1">
-          </div>
-          
-          
-        </form>
+      <div class="col">
+
       </div>
-      <div class="modal-footer">
-        <button type="submit" class="btn btn-secondary" data-bs-dismiss="modal">Ingresar</button>
+      <div class="col">
         
       </div>
     </div>
   </div>
-</div>
-<!-- Seccion Presentacion -->
-<section class="presentacion">
-  <h2>
-    Este es mi Portfolio. Es el proyecto final del curso #YoProgramo de Argentina Programa. 
-     En el cual he aplicado todos los conocimientos adquiridos. 
-     Comenzando por el lado del FrontEnd con el maquetado del sitio utilizando HTML, CSS y JavaScript, incorporando Angular como Framework <br>
-       y TypeScript como lenguaje. Dando uso a muchas de sus herramientas como la creación de componentes, templates 
-       , servicios, módulos, directivas, databinding, interfaces, routing, lazyload, guards, pipes, formularios Reactivos 
-       , sesión de usuario, uso de Bootstrap y PrimeNG como Frameworks Styles. Para la realización del BackEnd se empleó  
-       Spring Boot como framework + JPA + Hibernate con Java como lenguaje y MySQL como gestor de base de datos. 
-       En base al modelo MVC se crearon las API necesarias para responder a todas las peticiones del FrontEnd. 
-       Se utilizó arquitectura multicapa, Controller, Model, Repository, Service, Annotations, inyección de dependencias,
-       Autenticación con JWT, seguridad en rutas con gestión de Roles y upload de imágenes.
-  </h2>
-</section>
-
 
   
+  <section>
+    <div class="container">
+      <button type="button" class="navbar-toggler" data-toggle="collapse"
+      data-target="#menu-principal" aria-controls="menu-principal" aria-expanded="false"
+      aria-label="Desplegar menú de navegación">
+      <span class="navbar-toggler-icon text-white"></span>
+  </button>
+    
   
-
+  <div class="collapse navbar-collapse" id="menu-principal">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a href="#index.html" class="nav-link active">Inicio</a></li>
+      <li class="nav-item"><a href="#quien-soy" class="nav-link">¿Quien soy?</a></li>
+      <li class="nav-item"><a href="#proyectos" class="nav-link">Proyectos</a></li>
+    </ul>
+  </div>
+    </div>
+  </section>
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
